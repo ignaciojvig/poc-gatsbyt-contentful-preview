@@ -1,5 +1,7 @@
 name: GitHub Webhook + Contentful Preview + Gatsby
-on: [workflow_dispatch]
+on:
+  repository_dispatch:
+    types: rebuild_gatsby
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-20.04
